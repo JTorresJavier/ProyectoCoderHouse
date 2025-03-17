@@ -296,114 +296,79 @@ footer{
 
 
 /* PAGINA GENEROS*/
-.container1 {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Descripción de la sección */
-.descrip1 {
+.descrip1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: orange;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.descrip1 h1 {
+.descrip1 h1{
     font-weight: bold;
-    font-size: 32px;
 }
-.descrip1 p {
-    font-size: 18px;
+.descrip1 p{
+    font-size: 20px;
 }
 
-/* Título de los géneros */
-.pre-tit1 {
+.pre-tit1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: red;
 }
-.pre-tit1 h1 {
-    font-size: 28px;
-}
-.pre-tit1 p {
-    font-size: 18px;
-}
 
-/* Sección de Libros */
-.sec-libros1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Tarjeta de cada libro */
-.card-libros1 {
-    background-color: #222;
+.card-libros{
     padding: 16px;
     border: 1px solid red;
-    border-radius: 8px;
-    text-align: center;
+    width: 400px;
     overflow: hidden;
 }
-.card-libros1 img {
+.card-libros img{
     width: 100%;
-    border-radius: 8px;
-    transition: transform 0.5s ease-in-out;
+    padding: 10px;
 }
-.card-libros1 img:hover {
+.card-libros img:hover{
+    transition: transform 0.5s ease-in-out;
     transform: scale(1.1);
 }
-.card-libros1 h1 {
-    font-size: 20px;
+.card-libros h1{
     color: white;
-    margin-top: 10px;
+    font-size: 40px;
+    padding-top: 10px;
 }
-.card-libros1 h2 {
-    font-size: 16px;
+.card-libros h2{
     color: orange;
-    margin-bottom: 10px;
+    padding-bottom: 8px;
 }
-.card-libros1 p {
-    font-size: 14px;
-    color: #ccc;
-    margin-bottom: 10px;
-}
-
-/* Botón */
-.boton1 {
+.boton{
     text-decoration: none;
     color: red;
-    padding: 8px 12px;
+    padding: 8px;
     border: 1px solid white;
     border-radius: 5px;
-    display: inline-block;
-    transition: background 0.3s;
+    display: inline block;
 }
-.boton1:hover {
-    background: red;
-    color: white;
-}
-
-.ficc{
-    margin-top: -154px;
-}
-.fant{
-    margin-top: 82px;
-}
-.fa{
-    padding-top: 68px;
-}
-.cienfi{
-    margin-top: 324px;
-}
-.cifi{
-    padding-top: 93px;
+.sec-libros1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 72px;
+    margin-right: 72px;
+    height: 400px;
 }
 
+.boton-p{
+    padding-left: 143px;
+    margin-left: -142px;
+}
+.boton-n{
+    padding-right: 143px;
+    margin-right: -142px;
+}
 
 /* MEDIA QUERIES */
 
