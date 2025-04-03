@@ -105,9 +105,9 @@ footer {
       transition: transform 0.5s ease-in-out;
       transform: scale(1.1);
     }
-  }
-
-  .text-center {
+  } 
+}
+.text-center {
     width: 700px;
     margin-top: -115px;
     position: absolute;
@@ -120,9 +120,7 @@ footer {
     text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
-  }
 }
-
 .content {
   max-width: 800px;
   margin: auto;
@@ -401,3 +399,139 @@ footer {
     }
   }
 }
+
+//media querie//
+
+@mixin media-max($size) {
+  @media (max-width: $size) {
+      @content;
+  }
+}
+
+@mixin media-min($size) {
+  @media (min-width: $size) {
+      @content;
+  }
+}
+
+@include media-max(950px) {
+  .cont, .cont1, footer, .final {
+      text-align: center;
+  }
+  footer, .final {
+      flex-direction: column;
+      margin-left: 0;
+  }
+}
+
+@include media-min(1400px) {
+  .imggg {
+      margin-left: 23px;
+  }
+}
+
+@include media-max(1400px) {
+  .imggg {
+      margin-left: -67px;
+  }
+}
+
+@include media-max(992px) {
+  .gridm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@include media-max(615px) {
+  .text-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* SECTOR INTERÉS */
+@include media-max(1150px) {
+  .sec-libros {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card-libros {
+      width: 45%;
+  }
+}
+
+@include media-max(768px) {
+  .sec-libros {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card-libros {
+      width: 90%;
+  }
+}
+
+@include media-max(480px) {
+  .descrip p {
+      font-size: 16px;
+  }
+  .pre-tit {
+      padding: 10px;
+  }
+  .card-libros {
+      h1 {
+          font-size: 20px;
+      }
+      h2 {
+          font-size: 16px;
+      }
+  }
+  .boton {
+      font-size: 14px;
+      padding: 6px;
+  }
+}
+
+/* PAGINA CONTACTO */
+.prim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  color: red;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background-color: red;
+  border: none;
+
+  &:hover {
+      background-color: darkred;
+  }
+}
+
+/* RESPONSIVO */
+@include media-max(900px) {
+  .sec-libros1 {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include media-max(600px) {
+  .sec-libros1 {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+

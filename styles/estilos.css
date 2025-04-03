@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: black;
 }
@@ -97,7 +98,8 @@ footer {
   transition: transform 0.5s ease-in-out;
   transform: scale(1.1);
 }
-.imggg .text-center {
+
+.text-center {
   width: 700px;
   margin-top: -115px;
   position: absolute;
@@ -363,6 +365,115 @@ footer {
 .p-final .text-c p {
   color: black;
   font-size: 40px;
+}
+
+@media (max-width: 950px) {
+  .cont, .cont1, footer, .final {
+    text-align: center;
+  }
+  footer, .final {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .imggg {
+    margin-left: 23px;
+  }
+}
+@media (max-width: 1400px) {
+  .imggg {
+    margin-left: -67px;
+  }
+}
+@media (max-width: 992px) {
+  .gridm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 615px) {
+  .text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* SECTOR INTERÉS */
+@media (max-width: 1150px) {
+  .sec-libros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-libros {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .sec-libros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-libros {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .descrip p {
+    font-size: 16px;
+  }
+  .pre-tit {
+    padding: 10px;
+  }
+  .card-libros h1 {
+    font-size: 20px;
+  }
+  .card-libros h2 {
+    font-size: 16px;
+  }
+  .boton {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+/* PAGINA CONTACTO */
+.prim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+  color: red;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
+}
+
+.btn-primary {
+  background-color: red;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: darkred;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .sec-libros1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .sec-libros1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
